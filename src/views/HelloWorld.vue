@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
    <h1>Hello World!</h1>
+   <p>This page is lazy-loaded and not loaded from when the app first runs.</p>
   </div>
 </template>
 
