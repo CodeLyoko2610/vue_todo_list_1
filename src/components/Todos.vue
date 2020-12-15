@@ -1,20 +1,25 @@
 <template>
   <div>
     <div v-for="todo in todos" v-bind:key="todo.id">
-      <h3>{{todo.title}}</h3>
+      <TodoItem v-bind:todo="todo"/>
     </div>
   </div>
 </template>
 
 <script>
+import TodoItem from './TodoItem'
+
 export default {
   name: "Todos",
+  components : {
+    TodoItem,
+  },
   props: [
     "todos"
   ]
 }
 </script>
 
-<style lang="stylus" scoped>
+<style scoped>
 
 </style>
